@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oleo+Script:wght@400;700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url(lake.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+        }
+        .form{
+            background-color: white;
+            position: absolute;
+            width:300px;
+            height: 500px;
+            margin-left: 600px;
+            margin-top:150px;
+            border-radius: 20px;
+            border:1px solid rgb(0, 0, 0);
+            z-index: -1;
+        }
+        form{
+            font-family: 'vollkorn',serif;
+            margin-left: 60px;
+            margin-top: 10px;
+        }
+        img{
+            position: absolute;
+            width:350px;
+            height:503px;
+            border-radius: 20px;
+            margin-top: 150px;
+            margin-left: 285px;
+        }
+        p.first{
+            font-family: 'merriweather',sans serif;
+          font-size: 30px;
+          position: absolute;
+          margin-top: 280px;
+          color: white;
+          margin-left: 300px; 
+          z-index:1;  
+          font-weight: bold;
+        }
+        p.second{
+            font-family: 'laila',sans serif;
+          font-size: 20px;
+          position: absolute;
+          margin-top: 330px;
+          color: white;
+          font-weight: 200px;
+          margin-left: 380px; 
+          z-index:1 ; 
+        }
+    </style>
+</head>
+<body>
+    <p class="first">Create your account</p>
+    <p class="second">Register today!</p>
+        <div class="image">
+     <img src="download.jpg" alt="">
+        </div>
+        <div class="form">
+           <form method="post" action="create.php">
+  
+   <h1>Signup form</h1>
+  <label>First name</label><br>
+  <input type="text" name="firstname"><br>
+  <label>Last name</label><br>
+  <input type="text" name="lastName"><br>
+  <label>Username</label><br>
+  <input type="text" name="username"><br>
+  <label>Email</label><br>
+  <input type="text" name="email"><br>
+  <label>Password</label><br>
+  <input type="password" name="password"><br><br>
+  <label>Gender</label><br>
+  <input type="radio" value="male" name="gender">
+  <label>Male</label>
+  <input type="radio" value="female" name="gender">
+   <label>Female</label><br><br>
+<button name="submit">Sign up</button>
+<p>Already have an acoount?</p>
+<a href="login.php">login</a>
+    </form> 
+</body>
+</html>
